@@ -1,0 +1,96 @@
+body 
+{
+  background: radial-gradient(circle at 50% 40%, 
+              #3a1030 0%, 
+              #200a1c 40%, 
+              #0d0509 80%, 
+              #060305 100%);
+  min-height: 100vh;
+}
+
+.description 
+{
+  font-family:'Times New Roman', Times, serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.description:hover
+{
+  color: #c258ff;
+  transition: color 0.3s ease;
+}
+
+.plogo img 
+{
+  position: absolute;
+  top: 49%;
+  left: 60%;
+  width: 45;
+  height: 110%;
+  transform: translate(-70%, -50%);
+  filter: drop-shadow(0 0 30px rgba(194, 88, 255, 0.35));
+  animation: rotateDiamond 0s linear infinite;
+  rotate: -2deg;
+}
+
+
+
+body::before 
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.03);
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 40px;
+  z-index: -1;
+  animation: rotateDiamond 0s linear infinite;
+  
+}
+
+
+
+@keyframes rotateDiamond 
+{
+
+0%  { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+h1 
+{
+  font-family:'Times New Roman', Times, serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 3rem;
+}
+
+
+nav 
+{
+    display: flex;
+    justify-content: flex-end;
+     
+}
+
+nav a 
+{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover 
+{
+  transform: scale(1.1);
+}
